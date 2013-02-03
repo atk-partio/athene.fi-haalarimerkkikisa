@@ -207,15 +207,19 @@ footer#colophon {
 -------------------------------------------------------------- */
 
 #entries-container {
-	overflow-x: auto;
+	overflow-x: hidden;
 	overflow-y: hidden;
 	position: relative;
-	min-height: 400px;
+	height: 440px;
 }
 
 #entries {
 	position: absolute;
 	bottom: 0;
+
+	/* TODO: Nicer indication of first and last entries */
+	border-left: 5px solid #aaa;
+	border-right: 5px solid #aaa;
 }
 
 #entries article {
@@ -247,7 +251,7 @@ footer#colophon {
 #entries .votes {
 	text-indent: -9999em;
 	background-color: blue;
-	height: 800px;
+	height: 340px;
 	width: 110px;
 	margin: 0 auto;
 }
