@@ -206,14 +206,48 @@ footer#colophon {
 /* = contest items
 -------------------------------------------------------------- */
 
-#entries {
+#entries-container {
+	overflow-x: auto;
+	overflow-y: hidden;
 	position: relative;
-	overflow: hidden;
-	white-space: nowrap;
+	min-height: 400px;
+}
+
+#entries {
+	position: absolute;
+	bottom: 0;
 }
 
 #entries article {
-	/* Simulate grid_4 */
-	width: 220px;
+	width: 110px;
+	margin-left: 10px;
+	margin-right: 10px;
 	float: left;
+
+	/* Additional styling */
+	text-align: center;
+}
+
+#entries article.alpha {
+	margin-left: 0;
+}
+
+#entries article.omega {
+	margin-right: 0;
+}
+
+#entries img {
+	/* Greenish medium gray */
+	border: 5px solid #808D79;
+	width: 100px;
+	height: auto;
+}
+
+/* Vote bar */
+#entries .votes {
+	text-indent: -9999em;
+	background-color: blue;
+	height: 800px;
+	width: 110px;
+	margin: 0 auto;
 }
