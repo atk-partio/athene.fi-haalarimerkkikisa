@@ -202,3 +202,18 @@ header#branding {
 footer#colophon {
 	padding: 1em 0 0;
 }
+
+/* = contest items
+-------------------------------------------------------------- */
+
+#entries {
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#entries article {
+	/* Simulate grid_4 */
+	width: 220px;
+	float: left;
+}
